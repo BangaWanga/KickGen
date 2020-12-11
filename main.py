@@ -14,16 +14,3 @@ if __name__ == '__main__':
     gen_train = []
     gen_val = []
     _history = ae.fit_gen(gen_train, gen_val, checkpoint_dir, epochs=100, batch_size=batch_size)
-
-
-
-    # Instead of gen_train and gen_val (which are generators)
-    # we could also use lists or numpy arrays.
-    #
-    # Example for python-generator:
-    #
-    # def gen():
-    #     i=0
-    #     while True:
-    #         i += 1
-    #         yield i
